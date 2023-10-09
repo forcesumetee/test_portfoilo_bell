@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Kanit', sans-serif;
+    background-color: #ffece5;
+}
+
+.containner {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffece5;
+}
+
+.Name span {
+    color: #b78770;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    background-color: #b78770;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #ffece5;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b {
+    font-size: 70px;
+    color: #b78770;
+}
+
+.navItmes {
+    display: flex;
+}
+
+.navItmes li {
+    list-style: none;
+    font-size: 30px;
+    margin: 0 15px;
+}
+
+.navItmes li a {
+    font-size: 25px;
+    color: #ffece5;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navItmes li:hover a, .links a:hover {
+    color: #fdde8c;
+}
+
+.links a {
+    font-size: 30px;
+    color: #ffece5;
+    margin: 25px 10px;
+}
+
+.warpper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+
+.cols {
+    width: 50%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 50px;
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: #b78770;
+}
+
+.header-text h1 {
+    font-size: 100px;
+    margin-top: 40px;
+}
+
+.multiText {
+    color: #b78770;
+    text-transform: capitalize;
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #787A79;
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #b78770;
+    padding: 2px 10px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-radius: 20px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+button.clicked {
+    background-color: #fdde8c;
+}
+
+button:hover {
+    color: black;
+    background-color: #ffece5;
+}
+
+.imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox img {
+    position: relative;
+    height: 100;
+    width: calc(130% - 80px);
+    top: -100px;
+    right: 50px;
+    transform: rotateY(180deg);
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50% {
+        right: 30px;
+        top: -90px;
+    }
+}
+
+/* aboutMe */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 80%;
+    border-radius: 15px;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-titles {
+    font-size: 60px;
+    font-weight: 600;
+    color: #b78770;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b78770;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b78770;
+    font-size: 30px;
+}
+
+.tab-contents {
+    display: none;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+}
+
+.tab-contents.active-tab {
+    display: block;
+    opacity: 1;
+    
+}
+.tab-contents nav{
+    position: fixed;
+    top: 0;
+}
+.tab-links::before {
+    content: "";
+    position: absolute;
+    width: 2px; /* ความกว้างของเส้นเชื่อม */
+    height: 0; /* เริ่มต้นความสูงของเส้นเป็น 0 */
+    background-color: #b78770; /* สีของเส้นเชื่อม */
+    top: 50%; /* ตำแหน่งต้นของเส้นเชื่อมที่กึ่งกลางของปุ่ม */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; /* ให้เส้นเชื่อมอยู่ด้านหลังของปุ่ม */
+    transition: height 0.3s ease; /* แอนิเมชันให้ความสูงของเส้นเชื่อมเปลี่ยนแปลง */
+}
+
+.tab-links.active-link::before {
+    height: 100%; /* ทำให้ความสูงของเส้นเชื่อมเติมสูงเมื่อเป็น active-link */
+}
+
+.tab-links::after {
+    content: "";
+    position: absolute;
+    width: 15px; /* ความกว้างของวงกลม */
+    height: 15px; /* ความสูงของวงกลม */
+    background-color: #b78770; /* สีของวงกลม */
+    border-radius: 50%; /* ทำให้วงกลมมีรูปร่างเป็นวงกลม */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* ให้วงกลมอยู่ด้านหน้าของเส้นเชื่อม */
+    transition: all 0.3s ease; /* แอนิเมชันให้ขยายขนาดและขยับวงกลม */
+}
+.Name{
+    color: #b78770;
+}
+
+
+
+

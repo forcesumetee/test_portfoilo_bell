@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfoilo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&display=swap">
+    <script src="index.js"></script>
+
+
+</head>
+
+<body>
+    <div class="containner">
+        <nav>
+            <div class="logo">portfoilo<b>.</b></div>
+            <ul class="navItmes">
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">ทักษะ</a></li>
+                <li><a href="#">งานอดิเรก</a></li>
+                <li><a href="#">ความสนใจ</a></li>
+                <li><a href="project.html">My Work</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.facebook.com/sirinya.thanyajaroen"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com/s.sirinxa?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="https://github.com/Sirinya1085"><i class="fa fa-github"></i></a>
+
+            </div>
+        </nav>
+        <div class="warpper">
+            <div class="cols col0">
+                <span class="topline"></span>
+                <div class="header-text">
+                    <h1>Hello!</h1>
+                </div>
+                <p>ดิฉัน <span class="Name">นางสาว ศิริญญา ธัญญเจริญ</span> อายุ20ปี เรียนสาขาเทคโนโลยีมีเดีย เอก
+                    นวัตกรรมมีเดียทางการแพทย์ ชั้นปีที่3 ดิฉันสนใจที่ทำงานสาย Data Science
+                    และชอบเกี่ยวกับการทำงานของฐานข้อมูลต่างๆ และระบบสื่อสารคอมพิวเตอร์</p>
+                <div class="btns">
+                    <button><a href="project.html">My Work</a></button>
+                </div>
+            </div>
+            <div class="cols col1">
+                <div class="imgbox">
+                    <img src="" id="splash">
+                    <img src="img2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------aboutMe ---------------------->
+    <div class="about">
+        <div class="containner2">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img3.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titles">About me</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, 
+                        itaque saepe debitis impedit ab facere animi ea possimus, velit 
+                        repudiandae, veritatis earum fuga sunt libero. Possimus illo sunt 
+                        nulla magnam?</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', this)">ทักษะ</p>
+                        <p class="tab-links" onclick="opentab('hobby', this)">งานอดิเรก</p>
+                        <p class="tab-links" onclick="opentab('interest', this)">ความสนใจ</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI</span><br>ออกแบบเว็บไซด์และ Interface</li>
+                            <li><span>Artwork</span><br>วาดรูปและทำกราฟิกต่างๆ</li>
+                            <li><span>Coding</span><br>มีทักษะในการเขียนโค้ด Html CSS Javascript</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="hobby">
+                        <ul>
+                            <li><span>วาดรูป</span><br>ชอบวาดรูปเสมือนจริง</li>
+                            <li><span>เล่นเกม</span><br>เล่นเกมตอนว่าง</li>
+                            <li><span>ทำอาหาร</span><br>ชอบรังสรรค์เมนูอาหารใหม่ๆขึ้นมา</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="interest">
+                        <ul>
+                            <li><span>Batabase</span><br>สนใจในการออก</li>
+                            <li><span>Coding</span><br>อยากจะลองศึกษาภาษาใหม่ๆ</li>
+                        </ul>
+                    </div>
+                    
+                   
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+
+</body>
+
+</html>
